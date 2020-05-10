@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
+import Recipe from './components/Recipe'
 import './App.css';
 require('dotenv').config()
-
-const Recipe = ({ recipe }) => {
-  return (
-    <div key={recipe.label}>
-      <div >{recipe.recipe.label}</div>
-      <img src={recipe.recipe.image} />
-    </div>
-  )
-}
 
 function App() {
   const [search, setSearch] = useState('')
