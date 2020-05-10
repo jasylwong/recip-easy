@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('./soup-served-on-bowl-1907227.jpg');
+  background-size: cover;
+  height: 35vh;
+  bottom: 0px;
+  /* background-position: calc(100% - 20px) calc(100% - 10px);  */
+  background-position: right 0 bottom 30%;
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+
+p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.search-bar {
+  width: 50%;
+  height: 5vh;
+  font-size: 1.8rem;
+  opacity: 60%;
+}
+
+.search-button {
+  height: 50px;
+  width: 3vw;
+}

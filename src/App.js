@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import Recipe from './components/Recipe'
 import './App.css';
+import hardCodedRecipes from './data.json' // used to avoid making multiple API calls when styling
 require('dotenv').config()
 
 function App() {
   const [search, setSearch] = useState('')
   const [query, setQuery] = useState('chicken')
-  const [recipes, setRecipes] = useState([])
+  const [recipes, setRecipes] = useState(hardCodedRecipes.hits) // change the argument to avoid making multiple API calls
   
   const handleSearch = (event) => {
     setSearch(event.target.value)
@@ -18,21 +19,27 @@ function App() {
     setQuery(search)    
   }
 
-  const hook = () => {
-    axios.get(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAME_ID}&app_key=${process.env.REACT_APP_EDAMAME_KEY}`).then(res => {
-      setRecipes(res.data.hits)
-    })
-  }
+  // const hook = () => {
+  //   axios.get(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAME_ID}&app_key=${process.env.REACT_APP_EDAMAME_KEY}`).then(res => {
+  //     setRecipes(res.data.hits)
+  //   })
+  // }
 
-  useEffect(hook, [query])
+  // useEffect(hook, [query])
 
   return (
     <div className="App">
-      <h1>Recip-easy</h1>
-      <form onSubmit={handleSubmit}>
-        <input value={search} onChange={handleSearch}></input>
-        <input type="submit" value="submit" />
-      </form>
+      <div className="header">
+        <div className="title">
+          <h1>Recip-easy</h1>
+          <p>Where finding great dishes to cook is a piece of cake</p>
+          <br />
+          <form onSubmit={handleSubmit}>
+            <input value={search} onChange={handleSearch} className="search-bar"/>
+            <input type="submit" value="Search" className="search-button"/><br />
+          </form>
+        </div>
+      </div>
       <br />
       {recipes.map(recipe => <Recipe key={recipe.recipe.label} recipe={recipe} /> )}
     </div>
