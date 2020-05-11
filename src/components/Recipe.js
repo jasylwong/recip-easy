@@ -24,7 +24,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 300,
+    width: 300,
     margin: 20
   },
   media: {
@@ -50,7 +50,7 @@ export default function Recipe({ recipe }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" href={recipe.recipe.url}>
           Recipe
         </Button>
       </CardActions>

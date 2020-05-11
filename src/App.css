@@ -73,11 +73,22 @@ p {
 }
 
 .recipe-image {
-  text-align: center;
+  width: 200px;
 }
 
 .recipe-ingredients {
   font-size: 15px;
   text-align: center;
   padding: 10px;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

@@ -35,13 +35,15 @@ function App() {
           <p>Where finding great dishes to cook is a piece of cake</p>
           <br />
           <form onSubmit={handleSubmit}>
-            <input value={search} onChange={handleSearch} className="search-bar"/>
+            <input value={search} onChange={handleSearch} className="search-bar" placeholder=" eg. Cake"/>
             <input type="submit" value="Search" className="search-button"/><br />
           </form>
         </div>
       </div>
       <br />
-      {recipes.map(recipe => <Recipe key={recipe.recipe.label} recipe={recipe} /> )}
+      <div className='recipes'>
+        {recipes.map(recipe => <Recipe key={recipe.recipe.label} recipe={recipe} /> )}
+      </div>
     </div>
   );
 }
