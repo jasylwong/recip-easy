@@ -55,3 +55,28 @@ p {
   padding: 10px 20px;
   transform: translateY(-18%);
 }
+
+.recipe-container {
+  background: rgb(240, 240, 240);
+  width: 30%;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.recipe-label {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.recipe-image {
+  text-align: center;
+}
+
+.recipe-ingredients {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
