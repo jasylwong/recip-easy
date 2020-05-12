@@ -7,7 +7,7 @@ require('dotenv').config()
 
 function App() {
   const [search, setSearch] = useState('')
-  const [query, setQuery] = useState('pie')
+  const [query, setQuery] = useState('pie') 
   const [recipes, setRecipes] = useState(hardCodedRecipes.hits)
   
   const handleSearch = (event) => {
