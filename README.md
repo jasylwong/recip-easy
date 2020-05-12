@@ -26,6 +26,7 @@ To view the app navigate to: http://localhost:3000/
 - EDAMAM API
 - HTMl
 - CSS
+- Heroku
 
 ## <a name="Future_work">Future work</a>
 
