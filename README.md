@@ -2,7 +2,7 @@
 
 An app to help you search quickly and easily for recipes! Try it out by clicking [here]()!
 
-[Objective](#Objective) | [Installation](#Installation) | [Tech stack](#Tech_stack) | [[Future work](#Future_work)
+[Objective](#Objective) | [Installation](#Installation) | [Tech stack](#Tech_stack) | [Future work](#Future_work)
 
 ## <a name="Objective">Objective</a>
 
@@ -18,7 +18,7 @@ $ cd recip-easy
 $ npm install
 $ npm start
 ```
-To view the app navigate to: http://localhost:3000/
+To then view the app locally, navigate to: http://localhost:3000/
 
 ## <a name="Tech_stack">Tech stack</a>
 
@@ -26,6 +26,7 @@ To view the app navigate to: http://localhost:3000/
 - EDAMAM API
 - HTMl
 - CSS
+- Material-UI
 - Heroku
 
 ## <a name="Future_work">Future work</a>
