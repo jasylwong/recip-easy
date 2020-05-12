@@ -3,6 +3,7 @@ import axios from 'axios'
 import Recipe from './components/Recipe'
 import './App.css';
 import hardCodedRecipes from './data.json' // used to avoid making multiple API calls when styling
+// import SearchIcon from '@material-ui/icons/Search';
 require('dotenv').config()
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
           <br />
           <form onSubmit={handleSubmit}>
             <input value={search} onChange={handleSearch} className="search-bar" placeholder=" eg. Cake"/>
-            <input type="submit" value="Search" className="search-button"/><br />
+            <input type="submit" value="Search" className="search-button" /><br />
           </form>
         </div>
       </div>
