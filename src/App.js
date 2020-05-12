@@ -35,7 +35,7 @@ function App() {
           <p>Where finding great dishes to cook is a piece of cake</p>
           <br />
           <form onSubmit={handleSubmit}>
-            <input value={search} onChange={handleSearch} className="search-bar" placeholder=" eg. Cake"/>
+            <input value={search} onChange={handleSearch} placeholder=" eg. Cake"/>
             <input type="submit" value="Search" className="search-button"/><br />
           </form>
         </div>
