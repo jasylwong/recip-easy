@@ -3,12 +3,11 @@ import axios from 'axios'
 import Recipe from './components/Recipe'
 import './App.css';
 import hardCodedRecipes from './data.json' // used to avoid making multiple API calls when styling
-// import SearchIcon from '@material-ui/icons/Search';
 require('dotenv').config()
 
 function App() {
   const [search, setSearch] = useState('')
-  const [query, setQuery] = useState('chicken')
+  const [query, setQuery] = useState('pie')
   const [recipes, setRecipes] = useState(hardCodedRecipes.hits)
   
   const handleSearch = (event) => {
@@ -20,13 +19,14 @@ function App() {
     setQuery(search)    
   }
 
-  // const hook = () => {
-  //   axios.get(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAME_ID}&app_key=${process.env.REACT_APP_EDAMAME_KEY}`).then(res => {
-  //     setRecipes(res.data.hits)
-  //   })
-  // }
+  const hook = () => {
+    axios.get(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAME_ID}&app_key=${process.env.REACT_APP_EDAMAME_KEY}`).then(res => {
+      setRecipes(res.data.hits)
+      console.log()
+    })
+  }
 
-  // useEffect(hook, [query])
+  useEffect(hook, [query])
 
   return (
     <div className="App">

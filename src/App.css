@@ -15,7 +15,6 @@ body {
   background-size: cover;
   height: 35vh;
   bottom: 0px;
-  /* background-position: calc(100% - 20px) calc(100% - 10px);  */
   background-position: right 0 bottom 30%;
 }
 

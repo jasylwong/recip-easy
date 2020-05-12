@@ -6,7 +6,7 @@ An app to help you search quickly and easily for recipes! Try it out by clicking
 
 ## <a name="Objective">Objective</a>
 
-The objective in building this app was to apply what I'd learnt about State and Effect hooks in React. I also wanted to practice the use of an external API (the [EDAMAM recpipe API](https://developer.edamam.com/edamam-recipe-api)) within a React app.
+The objective in building this app was to apply what I'd learnt about State and Effect hooks in React. I also wanted to practice the use of an external API (the [EDAMAM recipe API](https://developer.edamam.com/edamam-recipe-api)) within a React app.
 
 ## <a name="Installation">Installation</a>
 
