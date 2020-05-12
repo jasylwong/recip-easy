@@ -42,10 +42,10 @@ p {
 
 .search-bar {
   width: 50%;
-  height: 5vh;
+  /* height: 5vh;
   border: none;
   font-size: 1.8rem;
-  opacity: 60%;
+  opacity: 60%; */
 }
 
 .search-button {
