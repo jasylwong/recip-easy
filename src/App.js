@@ -8,7 +8,7 @@ require('dotenv').config()
 function App() {
   const [search, setSearch] = useState('')
   const [query, setQuery] = useState('chicken')
-  const [recipes, setRecipes] = useState(hardCodedRecipes.hits) // change the argument to avoid making multiple API calls
+  const [recipes, setRecipes] = useState(hardCodedRecipes.hits)
   
   const handleSearch = (event) => {
     setSearch(event.target.value)
