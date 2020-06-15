@@ -4,7 +4,7 @@ An app to help you search quickly and easily for recipes! Try it out by clicking
 
 [Objective](#Objective) | [Installation](#Installation) | [Tech stack](#Tech_stack) | [Future work](#Future_work)
 
-![recip-easy](recip_easy.png)
+![recip-easy](recip_easy.png) { width: 70% }
 
 
 ## <a name="Objective">Objective</a>
